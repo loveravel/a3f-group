@@ -58,6 +58,63 @@
   font-style: normal;
 }
 
+/* Scaffolding */
+
+html {
+	font-size: 16px;
+	color: #000000;
+}
+
+body {
+  font-family: 'Suwannaphum Regular', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.sprite-inline {
+  display: none;
+}
+
+/* Page Header */
+
+
 .page-header__description {
   font-family: 'Suzuki Pro Regular', sans-serif;
 }
