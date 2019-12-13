@@ -48,6 +48,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Suwannaphum Regular';
+  src: url('../fonts/suwannaphum/Suwannaphum-Regular.eot');
+  src: url('../fonts/suwannaphum/Suwannaphum-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/suwannaphum/Suwannaphum-Regular.woff') format('woff'),
+  url('../fonts/suwannaphum/Suwannaphum-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page-header__description {
   font-family: 'Suzuki Pro Regular', sans-serif;
 }
