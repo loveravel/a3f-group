@@ -86,9 +86,9 @@ a {
   text-decoration: none;
 }
 
-/* img {
+img {
   max-width: 100%;
-} */
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -124,6 +124,12 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   max-width: fit-content;
   background-color: #005AAD;
+}
+
+.clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Page Header */
@@ -263,8 +269,60 @@ input[type="radio"].visually-hidden {
 }
 
 .hero__photo {
+  display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
   object-position: top right;
+}
+
+/* Catalog */
+
+/* -> catalog-header */
+.catalog-header {
+  background-color: #EBEBEB;
+}
+
+.catalog-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-header__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 570px;
+  height: 371px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.catalog-header__item--active {
+  background-color: #ffffff;
+}
+
+.catalog-header__model {
+  font-family: 'Suzuki Pro Headline', sans-serif;
+  font-size: 30px;
+  line-height: 130%;
+  margin-top: 60px;
+}
+
+.catalog-header__item--sx4 .catalog-header__model {
+  margin-right: 10px;
+}
+
+.catalog-header__item--active .catalog-header__model {
+  color: #005AAD;
+}
+
+.catalog-header__photo {
+  margin-top: -10px;
+}
+
+.catalog-header__item--sx4 .catalog-header__photo {
+  margin-top: 12px;
+  margin-right: 8px;
 }
