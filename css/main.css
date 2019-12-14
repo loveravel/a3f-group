@@ -199,21 +199,23 @@ input[type="radio"].visually-hidden {
 }
 /* characteristics <- */
 
-/* Page Header */
+/* Page Header & Page Footer */
 
 .page-header {
   background-color: #ffffff;
 }
 
-.page-header__wrapper {
+.page-header__wrapper,
+.page-footer__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 17px;
 }
 
-.page-header__container {
+.page-header__container,
+.page-footer__container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -238,7 +240,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.page-header__container--phone {
+.page-header__container--phone,
+.page-footer__container--phone {
   flex-direction: column;
   align-items: flex-end;
   margin-right: -2px;
@@ -256,6 +259,50 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 130%;
   color: #005AAD;
+}
+
+.page-footer {
+  background-color: #000000;
+}
+
+.page-footer__wrapper {
+  padding-top: 19px;
+  padding-bottom: 20px;
+}
+
+.page-footer__logo--autofield {
+  margin-top: 4px;
+  margin-left: -4px;
+  margin-right: 6px;
+}
+
+.page-footer__logo--suzuki {
+  margin-top: 10px;
+}
+
+.page-footer__container--phone {
+  margin-right: 0;
+}
+
+.page-footer__phone,
+.page-footer__request-call {
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.page-footer__phone {
+  font-family: 'Helvetica Neue Cyr Bold', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.page-footer__request-call {
+  font-family: 'Helvetica Neue Cyr Regular', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: -3px;
+  margin-right: 2px;
+  border-bottom: 1px dotted #ffffff;
 }
 
 /* Hero */
@@ -589,4 +636,8 @@ input[type="radio"].visually-hidden {
 .contacts__map {
   width: 1920px;
   margin: 0 auto;
+}
+
+.contacts__map iframe {
+  display: block;
 }
