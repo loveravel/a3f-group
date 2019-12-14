@@ -119,6 +119,13 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.button {
+  color: #ffffff;
+  display: inline-block;
+  max-width: fit-content;
+  background-color: #005AAD;
+}
+
 /* Page Header */
 
 .page-header {
@@ -151,7 +158,7 @@ input[type="radio"].visually-hidden {
 .page-header__description {
   font-family: 'Suzuki Pro Regular', sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 130%;
   width: 185px;
   margin: 0;
   margin-top: 5px;
@@ -174,6 +181,90 @@ input[type="radio"].visually-hidden {
 .page-header__request-call {
   font-family: 'Suzuki PRO Regular', sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 130%;
   color: #005AAD;
+}
+
+/* Hero */
+
+.hero__wrapper {
+  position: relative;
+}
+
+.hero__container {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 93px;
+}
+
+.hero__title {
+  font-family: 'Suzuki PRO Regular', sans-serif;
+  font-size: 38.5174px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.hero__price {
+  font-family: 'Suzuki Pro Headline', sans-serif;
+  font-size: 88.7579px;
+  font-weight: bold;
+  line-height: 130%;
+  position: relative;
+  margin-top: -3px;
+}
+
+.hero__price::after {
+  content: '';
+  position: absolute;
+  right: -108px;
+  top: 60px;
+  width: 29px;
+  height: 9px;
+  background-color: #ffffff;
+}
+
+.hero__space {
+  font-size: 40px;
+}
+
+.hero__button {
+  font-family: 'Suzuki PRO Regular', sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-top: -1px;
+  margin-bottom: 227px;
+  padding: 23px 57px 20px 56.5px;
+}
+
+.hero__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 156px;
+}
+
+.hero__control {
+  width: 70px;
+  height: 2px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.hero__control--active {
+  background-color: #005AAD;
+}
+
+.hero__background {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.hero__photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top right;
 }

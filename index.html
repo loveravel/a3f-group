@@ -34,12 +34,25 @@
   </header>
 
   <section class="hero">
-    <div class="hero__wrapper">
-      <h2 class="hero__title">Новая Suzuki SX4</h2>
-      <span class="hero__price">от 1 099 000 ₽</span>
-      <a class="hero__button button" href="#">Узнать подробнее</a>
+    <div class="hero__wrapper wrapper">
+      <div class="hero__container">
+        <h2 class="hero__title">Новая Suzuki SX4</h2>
+        <span class="hero__price">от 1<span class="hero__space"> </span>099<span class="hero__space"> </span>000 ₽</span>
+        <a class="hero__button button" href="#">Узнать подробнее</a>
+        <div class="hero__controls">
+          <button class="hero__control hero__control--first">
+            <span class="visually-hidden">Первое предложение</span>
+          </button>
+          <button class="hero__control hero__control--second hero__control--active">
+            <span class="visually-hidden">Второе предложение</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero__background">
       <img class="hero__photo"
         src="img/promo-suzuki-sx4.jpg"
+        width="1920" height="695"
         alt="Изображение Suzuki SX4"
       >
     </div>
