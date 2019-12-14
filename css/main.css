@@ -423,6 +423,8 @@ input[type="radio"].visually-hidden {
   font-family: 'Suzuki Pro Headline', sans-serif;
   font-size: 30px;
   line-height: 130%;
+  position: relative;
+  z-index: 10;
   margin-top: 60px;
 }
 
@@ -459,9 +461,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* Gift */
-.gift {
-
-}
 
 .gift__description {
   font-family: 'Suzuki Pro Headline', sans-serif;
