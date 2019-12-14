@@ -48,7 +48,7 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Suwannaphum Regular';
   src: url('../fonts/suwannaphum/Suwannaphum-Regular.eot');
   src: url('../fonts/suwannaphum/Suwannaphum-Regular.eot?#iefix') format('embedded-opentype'),
@@ -56,7 +56,7 @@
   url('../fonts/suwannaphum/Suwannaphum-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /* Scaffolding */
 
@@ -66,7 +66,7 @@ html {
 }
 
 body {
-  font-family: 'Suwannaphum Regular', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -122,7 +122,7 @@ input[type="radio"].visually-hidden {
 .button {
   color: #ffffff;
   display: inline-block;
-  max-width: fit-content;
+  box-sizing: border-box;
   background-color: #005AAD;
 }
 
@@ -131,6 +131,73 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
+/* -> car */
+.car {
+  text-align: center;
+}
+
+.car__name {
+  font-family: 'Suzuki Pro Regular', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  position: relative;
+  z-index: 10;
+}
+
+.car__photo {
+  display: block;
+  margin: -16px 1px 1px;
+}
+
+.car__more {
+  color: #005AAD;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 15px 0 14px;
+  border: 1px solid #005AAD;
+  background-color: transparent;
+}
+
+.car__buy {
+  font-family: 'Suzuki Pro Headline', sans-serif;
+  font-size: 20px;
+  width: 100%;
+  padding: 15px 0 12px;
+}
+/* car <- */
+
+/* -> characteristics */
+.characteristics {
+  margin-bottom: 17px;
+}
+
+.characteristics__item {
+  color: #979797;
+  display: flex;
+  justify-content: space-between;
+}
+
+.characteristics__name,
+.characteristics__value {
+  font-size: 16.5px;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+}
+
+.characteristics__dots {
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 19px;
+  margin: 0 2px;
+  background-image: linear-gradient(to right, #979797 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 5px 2px;
+  background-repeat: repeat-x;
+}
+/* characteristics <- */
 
 /* Page Header */
 
@@ -241,6 +308,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 130%;
   text-transform: uppercase;
+  max-width: fit-content;
   margin-top: -1px;
   margin-bottom: 227px;
   padding: 23px 57px 20px 56.5px;
@@ -280,6 +348,7 @@ input[type="radio"].visually-hidden {
 
 /* -> catalog-header */
 .catalog-header {
+  margin-bottom: 82px;
   background-color: #EBEBEB;
 }
 
@@ -325,4 +394,15 @@ input[type="radio"].visually-hidden {
 .catalog-header__item--sx4 .catalog-header__photo {
   margin-top: 12px;
   margin-right: 8px;
+}
+/* catalog-header <- */
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.catalog__item {
+  margin-bottom: 25px;
 }
