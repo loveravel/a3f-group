@@ -397,6 +397,10 @@ input[type="radio"].visually-hidden {
 }
 /* catalog-header <- */
 
+.catalog {
+  margin-bottom: 70px;
+}
+
 .catalog__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -405,4 +409,62 @@ input[type="radio"].visually-hidden {
 
 .catalog__item {
   margin-bottom: 25px;
+}
+
+/* Gift */
+.gift {
+
+}
+
+.gift__description {
+  font-family: 'Suzuki Pro Headline', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 490px;
+  margin: 0 auto 79px;
+  padding: 0;
+  padding-right: 11px;
+}
+
+.gift__list {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-gap: 29px;
+}
+
+.gift__item {
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 40px rgba(14, 41, 66, 0.2);
+}
+
+.gift__item:nth-child(1) .gift__photo {
+  margin: 19px 16px 17px 19px;
+}
+
+.gift__item:nth-child(2) .gift__photo {
+  margin: 19px 18px 17px 17px;
+}
+
+.gift__item:nth-child(3) .gift__photo {
+  margin: 19px 19px 17px 16px;
+}
+
+.gift__photo {
+  display: block;
+}
+
+.gift__name {
+  font-family: 'Suzuki Pro Headline', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 33px 0;
+  padding: 0;
 }
