@@ -634,10 +634,12 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__map {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
-.contacts__map iframe {
+.contacts__map-frame {
   display: block;
+  width: 100%;
+  border: none;
 }
