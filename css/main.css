@@ -468,3 +468,74 @@ input[type="radio"].visually-hidden {
   margin: 0 0 33px 0;
   padding: 0;
 }
+
+/* Features */
+
+.features {
+  color: #ffffff;
+  margin-top: -206px;
+  background: #005AAD;
+}
+
+.features__list {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  grid-gap: 85px;
+  margin-left: 90px;
+  padding-top: 437px;
+  padding-bottom: 147px;
+}
+
+.features__item {
+  position: relative;
+}
+
+.features__item--trade::before,
+.features__item--casco::before,
+.features__item--credit::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.features__item--trade::before {
+  top: -97px;
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/icon-car-insurance.svg);
+}
+
+.features__item--casco::before {
+  top: -98px;
+  width: 68px;
+  height: 67px;
+  background-image: url(../img/icon-agreement.svg);
+}
+
+.features__item--credit::before {
+  top: -91px;
+  width: 63px;
+  height: 62px;
+  background-image: url(../img/icon-discount.svg);
+}
+
+.features__name {
+  font-family: 'Suzuki Pro Headline', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+.features__description {
+  font-size: 18px;
+  line-height: 130%;
+  max-width: 260px;
+  margin: 0;
+  padding: 0;
+}
+
