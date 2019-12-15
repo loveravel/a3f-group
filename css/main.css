@@ -90,6 +90,10 @@ img {
   max-width: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -363,12 +367,11 @@ input[type="radio"].visually-hidden {
 
 .hero__controls {
   display: flex;
-  justify-content: space-between;
-  width: 156px;
 }
 
 .hero__control {
   width: 70px;
+  margin-right: 16px;
   height: 2px;
   background-color: #ffffff;
   border: none;
