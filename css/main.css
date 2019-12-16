@@ -375,6 +375,7 @@ input[type="radio"].visually-hidden {
   height: 2px;
   background-color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .hero__control--active {
@@ -416,6 +417,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .catalog-header__item--active {
@@ -443,7 +445,7 @@ input[type="radio"].visually-hidden {
   margin-top: -10px;
 }
 
-.catalog-header__item--sx4 .catalog-header__photo {
+.catalog-header__item:nth-child(2n) .catalog-header__photo {
   margin-top: 12px;
   margin-right: 8px;
 }

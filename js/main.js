@@ -302,7 +302,6 @@ class Model extends Component {
       <span class="catalog-header__model">${this._name}</span>
       <img class="catalog-header__photo"
         src="img/${this._img}.png"
-        width="347" height="233"
         alt="Изображение ${this._name}"
       >
     </button>`.trim();
